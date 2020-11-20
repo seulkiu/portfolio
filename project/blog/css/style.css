@@ -1,0 +1,10 @@
+@charset "utr-8";
+
+/*초기화요소*/
+
+body {width: 1920px; background: #e3e3e3;}
+
+#blog_bx { width: 1200px; margin: 0 auto; }
+#blog_bx .img {width: 100%;}
+
+#blog_bx 
