@@ -156,6 +156,8 @@ left:42%;}
 #gallery .frame4 {position: absolute; top:32%; /*right: 320px*/ right: 17%;}
 #gallery .frame5 {position: absolute; top:56%; right: 13%;}
 
+.frames_m {display: none;}
+
 /* FOOTER */
 #footer {width: 100%; height: 700px; background: url('../images/brush_bottom2.png') no-repeat center -70% #000; position: relative; }
 #footer h4 {position: absolute; top: 55%; left: 358px; }
@@ -417,6 +419,7 @@ left:42%;}
 #gallery .frame5 {position: absolute; top:56%; right: 12%;}
 #gallery .frame5 img {width:23vw;}
 
+    
 
 
 

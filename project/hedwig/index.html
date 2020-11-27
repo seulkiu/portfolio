@@ -4,11 +4,13 @@
 <meta charset="utf-8">
 <title>Hedwig</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script 
         intergrity=
         "sha384-tsQFqpEReu77LhBV2VZ1Au7zxOV+rXbY1F2cqB8txI/8aZjjp4Bqd+V6D5IgvKT"
@@ -223,15 +225,15 @@
     </section><!--//ost-->
     
     <section class="content" id="gallery">
+        
         <h2><img src="images/tit_gallery.png" alt="gallery"></h2>
         <div class="frames">
-        <div class="frame1"><img src="images/img_frame1.png" alt="pic1"></div>
-        <div class="frame2"><img src="images/img_frame2.png" alt="pic2"></div>
-        <div class="frame3"><img src="images/img_frame3.png" alt="pic3"></div>
-        <div class="frame4"><img src="images/img_frame4.png" alt="pic4"></div>
-        <div class="frame5"><img src="images/img_frame5.png" alt="pic5"></div></div><!--//액자들-->
-    </section><!--//gallery-->
-    
+        <div class="frame1"><a class="img1" href="images/pic1.jpg" title="gallery1"><img src="images/img_frame1.png" alt="frame1"></a></div>
+        <div class="frame2"><a class="img1" href="images/pic2.jpg" title="gallery2"><img src="images/img_frame2.png" alt="frame2"></a></div>
+        <div class="frame3"><a class="img1" href="images/pic3.jpg" title="gallery3"><img src="images/img_frame3.png" alt="frame3"></a></div>
+        <div class="frame4"><a class="img1" href="images/pic4.jpg" title="gallery4"><img src="images/img_frame4.png" alt="frame4"></a></div>
+        <div class="frame5"><a class="img1" href="images/pic5.jpg" title="gallery5"><img src="images/img_frame5.png" alt="frame5"></a></div></div><!--//액자들-->
+     </section><!--//gallery-->
         
     
         
@@ -263,9 +265,21 @@
             </li>
         </ul>
     </footer>
-    
-    
-    
+     
+
+    <script type="text/javascript">
+
+    $('.img1').magnificPopup({
+       type: 'image',
+       closeOnContentClick: true,
+       closeBtnInside: true,
+       fixedContentPos: true,
+       image: {    verticalFit: true    },
+       gallery: {   enabled: true    }, // 좌우로 사진 돌려보기 생성
+       zoom: {    enabled: true,   duration: 400    }
+    });
+
+</script>
 
 </body>
 </html>
