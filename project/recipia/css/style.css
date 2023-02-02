@@ -21,7 +21,14 @@ body {font-family: 'Noto Sans KR'; font-size: 16px; line-height: 26px; color: #0
 .btn_close:hover {opacity: 0.3;}
 .btn_close a img {width: 100%;}
 
-#styleguide { width:100%; height:11790px; position: relative;  background: url('../images/recipia_styleguide2.jpg') no-repeat center top; background-size: 100%;}
+#styleguide { 
+    max-width:1920ㅔㅌ; height:0; position: relative;  
+    padding-bottom: calc(11790/1920*100%);
+    background-image: url('../images/recipia_styleguide2.jpg');
+    background-size: 100vw; 
+    background-repeat: no-repeat;
+    background-position: center top;
+}
 
 #styleguide .btn_back a {display: none;}
 
